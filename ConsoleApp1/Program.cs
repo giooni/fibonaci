@@ -10,8 +10,23 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            var fibonaccinums = new List<int> { 1, 1 };
+            while(fibonaccinums.Count <20) {
+                var num1 = fibonaccinums[fibonaccinums.Count - 1];
+                var num2 = fibonaccinums[fibonaccinums.Count - 2];
+
+                fibonaccinums.Add(num1 + num2);
+            }
+            foreach(var item in fibonaccinums)
+            
+                Console.WriteLine(item);
+                Console.ReadKey();
+            
+
         }
     }
 }
+
+
+
+
